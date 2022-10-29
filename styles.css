@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+body {
+	background: hsl(27, 66%, 92%);
+}
+
+.balance-card {
+	width: fit-content;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	margin: 40px auto;
+	max-width: 350px;
+}
+
+.balance {
+	padding: 22px;
+	background: hsl(10, 79%, 65%);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 14px;
+	margin-bottom: 22px;
+	color: #fff;
+}
+
+.balance p {
+	margin-bottom: 10px;
+}
+
+.balance h5 {
+	font-size: 24px;
+}
+
+.spendings {
+	background: hsl(33, 100%, 98%);
+	padding: 22px;
+	border-radius: 14px;
+}
+
+.spendings h2 {
+	margin-bottom: 20px;
+}
+
+.daily-spend {
+	display: grid;
+	grid-template-columns: repeat(7,1fr);
+	grid-row: 1fr;
+	height: 200px;
+	padding-bottom: 18px;
+	border-bottom: 3px solid hsl(27, 66%, 92%);
+	margin-bottom: 18px;
+}
+
+.grid-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	width: 40px;
+	max-width: 40px;
+}
+
+.grid-item p {
+	margin: 10px auto;
+	color: hsl(28, 10%, 53%);
+}
+
+.bar {
+	background: hsl(10, 79%, 65%);
+	width: 70%;
+	border-radius: 4px;
+	margin: 0 10px;
+	transition: opacity 0.2s;
+}
+
+.bar:hover {
+	opacity: 0.8;
+}
+
+.amount {
+	background: hsl(25, 47%, 15%);
+	width: 90%;
+	padding: 8px;
+	font-size: 12px;
+	border-radius: 3px;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 4px;
+	display: none;
+	justify-content: center;
+	text-align: center;
+}
+
+.total {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.total p {
+	color: hsl(28, 10%, 53%);
+	margin: 4px 0;
+}
+
+.total h3 {
+	color: hsl(25, 47%, 15%);
+}
+
+.total-amount h3 {
+	font-size: 32px;
+}
+
+.porcentage {
+	text-align: right;
+}

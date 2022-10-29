@@ -2,42 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" type="text/css" href="styles.css">  
   <title>Frontend Mentor | Expenses chart component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+<div class="balance-card">
+  <div class="balance">
+    <div class="my-balance">
+      <p>My balance</p>
+      <h5>$921.48</h5>
+    </div>
+    <img src="images/logo.svg">
   </div>
+  <div class="spendings">
+    <div>
+      <h2>Spending - Last 7 days</h2>
+      <div class="daily-spend">
+        <div class="mon grid-item"><div class="amount-mon amount"></div><div class="mon-bar bar"></div><p>mon</p></div>
+        <div class="tue grid-item"><div class="amount-tue amount"></div><div class="tue-bar bar"></div><p>tue</p></div>
+        <div class="wed grid-item"><div class="amount-wed amount"></div><div class="wed-bar bar"></div><p>wed</p></div>
+        <div class="thu grid-item"><div class="amount-thu amount"></div><div class="thu-bar bar"></div><p>thu</p></div>
+        <div class="fri grid-item"><div class="amount-fri amount"></div><div class="fri-bar bar"></div><p>fri</p></div>
+        <div class="sat grid-item"><div class="amount-sat amount"></div><div class="sat-bar bar"></div><p>sat</p></div>
+        <div class="sun grid-item"><div class="amount-sun amount"></div><div class="sun-bar bar"></div><p>sun</p></div>
+      </div>
+    </div>
+    <div class="total">
+      <div class="total-amount">
+        <p>Total this month</p>
+        <h3>$478.33</h3>
+      </div>
+      <div class="porcentage">
+        <h3>+2.4%</h3>
+        <p>from last month</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="code.js"></script>
 </body>
 </html>
